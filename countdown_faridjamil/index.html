@@ -6,32 +6,38 @@
 
     <body align="center" style="padding:50px;">
         <img src="bg.png">
-        <h2>📢 Menuju Ultah Ke-21 Farid Jamil</h2>
+        <h2>📢 Menuju Ultah Ke-22 Farid Jamil</h2>
         <br>
         <p id="demo"></p>
         <br>
-        <h2>🔊 Akan dilaksanakan pada, 19 Agustus 2022, 20:00:00 WITA</h2><br>
+        <h2>🔊 Akan dilaksanakan pada, 19 Agustus 2023, 22:00:00 WITA</h2><br>
         <br><h2>Susunan Acara</h2><br>
         <ol align="left">
             <li>Pembukaan</li><li>Pembacaan fatihah dan sholawat nahdlatain</li><li>pembacaan sholawat dalam Hizib Nadlatul Wathan</li><li>pembacaan ucapan ulang tahun dari whatsapp, facebook, instagram, dan twitter</li><li>do'a sekaligus penutup</li>
         </ol>
-        <script> // Mengatur waktu akhir perhitungan mundur var countDownDate = new Date("Dec 5, 2019 15:37:25").getTime(); // Memperbarui hitungan mundur setiap 1 detik var x = setInterval(function() { // Untuk mendapatkan tanggal dan waktu hari ini var now = new Date().getTime(); 
-  // Temukan jarak antara sekarang dan tanggal hitung mundur
-  var distance = countDownDate - now;
-      // Perhitungan waktu untuk hari, jam, menit dan detik
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      // Keluarkan hasil dalam elemen dengan id = "demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    // Jika hitungan mundur selesai, tulis beberapa teks 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+        <script>
+        // Mengatur waktu akhir perhitungan mundur
+        var countDownDate = new Date("August 19, 2023 22:00:00").getTime();
+        // Memperbarui hitungan mundur setiap 1 detik
+        var x = setInterval(function() { 
+        // Untuk mendapatkan tanggal dan waktu hari ini
+        var now = new Date().getTime(); 
+        // Temukan jarak antara sekarang dan tanggal hitung mundur
+        var distance = countDownDate - now;
+        // Perhitungan waktu untuk hari, jam, menit dan detik
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Keluarkan hasil dalam elemen dengan id = "demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+        // Jika hitungan mundur selesai, tulis beberapa teks 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+       </script>
     </body>
 </html>
