@@ -8,7 +8,7 @@
         <img src="bg.png">
         <h2>📢 Menuju Ultah Ke-22 Farid Jamil</h2>
         <br>
-        <p id="demo"></p>
+        <h1 id="demo"></h1>
         <br>
         <h2>🔊 Akan dilaksanakan pada, 19 Agustus 2023, 22:00:00 WITA</h2><br>
         <br><h2>Susunan Acara</h2><br>
@@ -30,8 +30,8 @@
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         // Keluarkan hasil dalam elemen dengan id = "demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+        document.getElementById("demo").innerHTML = days + "Hari " + hours + "Jam "
+        + minutes + "Menit " + seconds + "Detik ";
         // Jika hitungan mundur selesai, tulis beberapa teks 
         if (distance < 0) {
           clearInterval(x);
